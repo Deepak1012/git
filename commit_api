@@ -1,0 +1,21 @@
+# API:
+https://api.github.com/repos/{organization_name}/{repo_name}/contents/{file_name}
+
+# Method :
+PUT
+
+# body:
+
+{
+  "message": "First commit",
+  "committer": {
+    "name": "Deepak Bhatia",
+    "email": "deepak10bhatia@gmail.com"
+  },
+  "content": Base64String
+}
+
+# headers:
+
+Content-Type:application/json
+Authorization:token pat_token
