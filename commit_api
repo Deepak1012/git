@@ -1,5 +1,5 @@
 # API:
-https://api.github.com/repos/{organization_name}/{repo_name}/contents/{file_name}
+https://api.github.com/repos/{organization_name}/{repo_name}/contents/{file_name_with_extension}
 
 # Method :
 PUT
@@ -19,3 +19,7 @@ PUT
 
 Content-Type:application/json
 Authorization:token pat_token
+
+# CURL:
+
+curl -X PUT -H "Authorization: token <pat_token>" --data '{"message":"First commit","committer":{"name":"Name","email":"email_id"},"content":"Base64String"}' https://api.github.com/repos/{organization_name}/{repo_name}/contents/{file_name_with_extension}
