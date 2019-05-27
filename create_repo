@@ -1,0 +1,22 @@
+# With API:
+https://api.github.com/orgs/{organization_name}/repos
+body:
+
+{
+  "name": "Test",
+  "description": "Genrated form Api",
+  "homepage": "https://github.com",
+  "private": false,
+  "has_issues": true,
+  "has_projects": true,
+  "has_wiki": true
+}
+
+headers:
+
+Content-Type:application/vnd.github.v3+json
+Authorization:token pat_token
+
+# With curl:
+
+curl -H "Authorization: token <pat_token>" --data '{"name":"NEW_REPO_NAME"}' https://api.github.com/orgs/{organization_name}/repos
