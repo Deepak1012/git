@@ -1,6 +1,10 @@
 # With API:
 https://api.github.com/orgs/{organization_name}/repos
-body:
+
+# Method :
+POST
+
+# body:
 
 {
   "name": "Test",
@@ -12,9 +16,9 @@ body:
   "has_wiki": true
 }
 
-headers:
+# headers:
 
-Content-Type:application/vnd.github.v3+json
+Content-Type:application/json
 Authorization:token pat_token
 
 # With curl:
