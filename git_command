@@ -49,6 +49,10 @@ git log --pretty=oneline --abbrev-commit
 git rebase -i HEAD~<sr.no for commit>
 git push <remote_name> <branch_name>
 
+# remove unpushed commit from local
+git reset --soft HEAD~1 # keep your files and remove commit
+git reset --hard HEAD~1 # delete files and commit 
+
 
 # Delete branch from local 
 git branch -d <branch_name> # -d for --delete
